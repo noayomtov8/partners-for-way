@@ -1,0 +1,522 @@
+:root {
+    --font-family-assistent: 'Assistant', sans-serif;
+    --font-family-ui: var(--font-family-assistent);
+}
+
+* {
+    direction: rtl;
+    font-family: var(--font-family-assistent);
+}
+
+.blocks-accordion__header {
+    direction: rtl;
+}
+
+.blocks-accordion__title {
+    text-align: right;
+}
+
+#innerApp {
+    direction: rtl;
+}
+
+div.lesson--open {
+    padding-right: 28rem;
+    
+    padding-left: 0;
+}
+
+.lesson--open section.lesson__sidebar {
+    opacity: 1;
+}
+
+@media (max-width: 59.9375em) {
+    .lesson--open-mobile .lesson__content {
+        transform: translateX(0);
+    }
+}
+
+.lesson__sidebar {
+    right: 0;
+    left: auto;
+}
+
+.lesson-header__top-wrap:after {
+    position: relative;
+}
+
+
+.progress__indicator {
+    right: -100%;
+}
+
+.lesson-header__top-wrap:after {
+
+    position: relative;
+}
+
+.progress__container {
+    position: absolute;
+}
+
+/* section#courseOverviewSidebar[aria-hidden="true"] {
+    position: absolute;
+    display: block;
+    top: 0;
+    width: 65vw;
+    height: 100vh;
+    right: 0;
+    opacity: 1;
+    z-index: 15;
+} */
+.overview-sidebar__search-icon {
+    left: 1.5rem;
+    right: unset;
+}
+.page-view.page-view--visible {
+    width: 100vw;
+}
+
+button.page-menu-toggle[aria-expanded="true"]::before {
+    height: 20px;
+    width: 20px;
+    z-index: 100;
+    content: "X";
+    font-size: 24px;
+    font-weight: 500;
+    color: #fff;
+    margin-top: -15px;
+    margin-right: -10px;
+}
+
+button.page-menu-toggle[aria-expanded="true"] SVG {
+    /* DISPLAY: none; */
+}
+
+.bubble {
+    text-align: right !important;
+}
+
+button.bubble__close {
+    display:block;
+    left: 1rem ;
+    top: 1rem;
+    position: absolute;
+}
+
+.fr-view{
+    font-size: 24px;
+}
+
+h1.fr-view {
+    font-size: 30px;
+}
+
+div.bubble--active .bubble__controls {
+    display: none;
+}
+
+div.bubble--active .bubble__title {
+    margin-right: 0;
+}
+button.page-menu-toggle {
+    /*position: fixed;*/
+    /*top: 10px;*/
+    /*left: 10px;*/
+}
+.page__menu {
+    display: none;
+}
+
+button.overview-sidebar__search-icon.overview-sidebar__search-icon-appear-done.overview-sidebar__search-icon-enter-done {
+
+    display: flex;
+    justify-content: end;
+}
+
+div.lesson-header__top-wrap:after {
+
+    left: unset;
+    right: 0;
+}
+
+.overview__details-trigger-text.brand--ui {
+    margin-right: -4rem !important;
+    margin-left: 1rem !important;
+    font-family: Assistant !important;
+    font-size: large;
+}
+
+.overview__side-content {
+    padding: 1vw 0 !important;
+}
+
+.block-impact--d .block-impact__quote:before
+{
+    right: 0;
+}
+
+.block-image--overlay .block-image__paragraph:before {
+    display: none;
+}
+
+/* .progress-bar__fill {
+    display: none;
+} */
+
+
+
+span.flip-icon svg {
+    width: 30px;
+    height: 30px;
+    animation-name: flicker;
+    animation-duration: 2s;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+  }
+  
+  @keyframes flicker {
+    from {fill: rgb(86, 83, 83);}
+    to {fill: rgb(240, 240, 85);}
+  }
+
+.progress-bar__percentage-bottom {
+    display: none;
+}
+
+div.brand--ui, div.brand--ui * {
+    font-family: Assistant !important;
+    font-size: 17px;
+}
+
+.lesson-link__icon svg {
+    display: none;
+}
+
+.block-list__content__left {  
+    right: -50px;
+    position: relative;
+}
+
+.blocks-button__button{
+    font-weight: 400 !important;
+    font-size: 16px !important;
+}
+
+.blocks-button__description {
+    padding-right: 0 !important;
+}
+
+/* mor's changes................................................................ */
+
+/* upper fixed bar in all pages */
+/* .page__menu {
+    border-bottom: 1px solid black;
+    padding: 0;
+    height: 55px;
+    position: fixed !important;
+    background-color: inherit;
+  
+} */
+
+/* this fixing the phone display */
+body .lesson__content {
+    /*position: fixed;*/
+    /*width: 100vw;*/
+    top: 0;
+    right: 0;
+}
+section#courseOverviewSidebar {
+    /*z-index: 10;*/
+
+}
+
+
+button.page-menu-toggle::after {
+    /* content: url('../assets/MercazLekalbeiLogo.png');  */
+    position: fixed;
+    right: 230px;
+    top: 5px;
+    
+
+}
+body .imaginative .lesson--open-mobile {
+    --width-imaginative-nav-sidebar: unset
+}
+
+/* firstPage */
+.overview__side-panel.brand--background {
+    background-image: url("../assets_extra/backgroundImage.jpg");
+}
+
+header {
+    height: 100%;
+}
+.overview__side {
+    height: 100%;   
+}
+body .overview__side-container {
+    margin: 0;
+    position: relative;
+    right: 20%;  
+    margin-top: 20%; 
+}
+
+/* body .overview__title.brand--head.brand--linkColor h1.fr-view {
+    font-size: 40px;
+    
+} */
+
+body .overview__title.brand--head.brand--linkColor h1.fr-view::after {
+    content: "קליטת כלב חדש יכולה להיות משימה מאתגרת, בייחוד בתחילת הדרך. זו הסיבה שיצרנו את המדריך לקליטת כלב שירות, מקום אחד עם כל המידע שתצרכו לדעת.";
+    font-size: 22px;
+    font-weight: normal;
+    padding: 10px;
+    display: block;
+}
+
+.overview__title.brand--head.brand--linkColor {
+    margin: 0;
+    padding-bottom: 20px;
+}
+
+a.overview__button.brand--color.overview__button-enrolled {
+    font-size: 22px;
+    font-family: 'Assistant';
+    font-weight: normal;
+    padding: 4px 25px;
+    margin: 0;
+}
+
+/* nevigation bar */
+div#nav-content {
+    direction: ltr;
+}
+
+body .lesson--open-mobile .lesson__content {
+    transform: unset;
+}
+
+div#custom-bar img {
+    max-height: 30px;
+}
+
+div#custom-bar .burger-wrapper img {
+    max-height: 25px;
+}
+body.homepage div#custom-bar .logos-wrapper {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+}
+div#custom-bar {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    padding: 10px;
+}
+.burger-wrapper, .burger-wrapper a {
+    display: flex;
+    align-items: center;
+}
+
+li.block-list__item.block-list__animated-item.animated.fadeInRight {
+    margin-right: 50px;
+}
+
+button.overview-sidebar__search-icon {
+    right: unset;
+    bottom: 20px;
+    top: unset;
+}
+
+body.homepage #custom-bar .burger-wrapper {
+    display: none;
+}
+
+.overview__content {
+    display: none;
+}
+
+li.lesson-lists__item {
+    font-weight: normal;
+    
+}
+.lesson-link--section.brand--ui {
+    font-weight: bold;
+}
+
+/* svg and border below edited date 15.6 */
+
+svg.i.i-search {
+    float: left;
+}
+
+.blocks-accordion__content {
+    border-right: 4px solid transparent;
+    border-left: none !important; 
+}
+
+button.blocks-accordion__header.brand--border {
+    border-left: none;
+    border-right: 4px solid transparent;
+}
+/* .logos-wrapper>a {
+    padding-left: 20px;
+} */
+
+#hitlogo {
+    margin-left: 15px;
+}
+
+/* phone changes */
+
+@media (max-width: 990px) {
+
+ body.homepage {
+    position: fixed;
+}
+body .overview__side-container {    
+    margin-top: 40%;
+    right: 0;
+}
+div.fr-view > ul {
+    padding-right: 20px;
+}
+div.fr-view > p {
+    text-align: center !important;
+}
+/* 1 line below edited date 15.6 */
+
+body .lesson__sidebar {
+    width: 28rem;
+}
+.process-counter__inner {
+    display: flex;
+    justify-content: center;
+    flex-direction: row-reverse;
+}
+
+
+}
+
+/* desktop changes */
+@media (min-width: 990px) {
+
+    /* 2 line below changed 15.6-sidebar size */
+    body .lesson__sidebar {
+        width: 36rem;
+    }
+    div.lesson--open {
+        padding-right: 36rem;
+        
+    }
+
+   body .page__header-container {
+        margin: 0;
+        padding: 0;
+    }
+
+    /*Below is cancellation of content's alignment to the title line 
+     body .block-impact__container {
+        margin: 0;
+        padding: 0;
+        padding-right: 80px;
+    }
+    
+     body .block-text__container {
+        margin: 0;
+        padding: 0;
+    }
+    body .block-list__container {
+        margin: 0;
+    }
+    body .block-image__container {
+        margin: 0;
+        padding: 0;
+    } */
+    body .block-image__text.brand--body.brand--linkColor.brand--linkColor {
+        padding: 0;
+    }
+    
+    .block-image__row {
+        margin: 0;
+        padding-right: 100px;
+    }
+    body .block-image--text-aside.block-image--reverse.block-image--small .block-image__col:last-child {
+        width: 50%;     
+    }
+
+    .block-image__col {        
+        margin: 0 !important;
+        width: 50% !important;
+        
+    }
+    .block-image__figure {
+        margin: 0 !important;
+    }
+    svg.bubble__close-icon:hover {
+        cursor: pointer;
+    }
+    .lesson-header {
+        padding: 0;
+    }
+    body .block-image__row {
+        margin: 0;
+        padding: 0;
+        display: flex;
+        justify-content: center;
+    }
+    .block-image--overlay .block-image__paragraph p {
+        text-align: center !important;
+    }
+
+    .block-image--overlay .block-image__paragraph {
+        padding-top: 0;
+    }
+
+    .block-image--overlay .block-image__figure {
+        align-items: center;
+    }
+    
+    .process-counter__inner {
+        display: flex;
+        justify-content: center;
+        flex-direction: row-reverse;
+    }
+    /* below cancellation of padding of pic plus text of obisity page
+     .block-image__row {
+        padding: 70px !important;
+    } */
+    body .overview__title.brand--head.brand--linkColor h1.fr-view {
+        font-size: 80px;
+    }
+   
+        
+    }
+
+    div#custom-bar img {
+        max-height: 40px;
+    }
+
+    div#custom-bar .burger-wrapper img {
+        max-height: 45px;
+    }
+
+
+
+/* div#custom-bar {
+    width: 100vw;
+    position: fixed;
+    z-index: 1;
+    left: 0;
+    right: 0;
+} */
+    
+
+
+
+
+
+
+
